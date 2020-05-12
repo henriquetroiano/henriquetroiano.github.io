@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+ .menu {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    display: inline-flex;
+}
+
+.menu li {
+    margin-left: 1rem;
+    list-style: none;
+}
+
+
+
+.submenu {
+    display: none;
+    transition: step-end;
+
+}
+
+.show {
+    display: grid;
+    margin-right: 1rem;
+    transition: ease-in-out 2s;
+
+    
+}
+
+.show:hover {
+    display: inline;
+    color: brown;
+}
+
+
+
+
+
