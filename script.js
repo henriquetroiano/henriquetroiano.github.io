@@ -1,10 +1,14 @@
+const aaa = document.querySelector('.menu li')
 
-function alertaHome() {
-    
-        alert('window WOW')
-    
+function all() {
+    alert('???')
 }
 
+function alertaHome() {
+    aaa.addEventListener('click', all())
+}
+
+alertaHome()
 
 
 
