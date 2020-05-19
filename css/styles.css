@@ -34,3 +34,7 @@ margin-right: 2rem;
     font-size: large;
     
 }
+
+.desativado li {
+    display: none;
+}
