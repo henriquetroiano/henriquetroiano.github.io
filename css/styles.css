@@ -13,13 +13,15 @@ body * {
     font-family: roboto, sans-serif;
     font-size: 1rem;
     
+    
 }
 
 .menu_content li a {
     text-decoration: none;
     color: #00000F;
     cursor: pointer;
-    transition: ease-in-out 647ms;
+    transition: ease 647ms;
+
 }
 
 .exit {
@@ -30,11 +32,17 @@ margin-right: 2rem;
 
 .menu_content li a:hover {
     color: red;
-    transition: ease-in-out 647ms;
+    transition: ease 647ms;
     font-size: large;
     
 }
 
-.desativado li {
-    display: none;
+.top_menu {
+    position:absolute;
+	top:0;
+    left:0;
+    right: 0;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: lightgrey;
 }
