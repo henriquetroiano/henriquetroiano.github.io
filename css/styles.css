@@ -62,9 +62,11 @@ html {
     margin-right: 2rem;
 }
 
-#about_me {
-    transition
+.profile_img {
+    width: 30vw;
+    height: auto;
+    position: relative;
+    top: 15vh;
+    left: 2rem;
+
 }
-
-
-
