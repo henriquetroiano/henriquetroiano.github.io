@@ -65,14 +65,16 @@ html {
 }
 
 .presentation {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: grid;
-    grid-template-columns: 1.5fr 2.5fr;
+    grid-template-columns: 1.5fr 1.25fr 1.25fr;
     column-gap: 1vmin;
     position: relative;
-    top: 10vh;
+    top: 13vh;
     padding: 1vmin;
     align-items: center;
+    height: 50vh;
+    
     
 
 }
@@ -107,6 +109,17 @@ html {
     margin-bottom: 1vmin;
 }
 
+.coding {
+    /* border: 1px solid black; */
+    width: 25vw;
+    
+}
+
+.coding img {
+    /* border: 1px solid black; */
+    width: 25vw;
+    
+}
 
 
 
