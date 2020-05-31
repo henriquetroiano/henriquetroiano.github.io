@@ -1,7 +1,7 @@
-$('[href="#about_me"]').click(function(event) {
+$('[href="#about_me"]').click(function (event) {
     event.preventDefault();
     var id = $(this).attr('href');
-     target = $(id).offset().top;
+    target = $(id).offset().top;
 
     $('html', 'body').animate({
         scrollTop: target
@@ -9,7 +9,6 @@ $('[href="#about_me"]').click(function(event) {
 })
 
 
-alert('Funcionando')
 
 
 
