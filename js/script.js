@@ -9,6 +9,8 @@ $('[href="#about_me"]').click(function(event) {
 })
 
 
+alert('Funcionando')
+
 
 
 

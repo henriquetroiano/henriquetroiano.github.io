@@ -65,7 +65,7 @@ html {
 }
 
 .presentation {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1.5fr 1.25fr 1.25fr;
     column-gap: 1vmin;
@@ -73,7 +73,7 @@ html {
     top: 13vh;
     padding: 1vmin;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
     
     
 
@@ -92,6 +92,7 @@ html {
     height: auto;
     border-radius: 3vmin;
     margin-right: 3vmin;
+    max-height: 40vh;
 
 }
 
@@ -109,16 +110,33 @@ html {
     margin-bottom: 1vmin;
 }
 
-.coding {
-    /* border: 1px solid black; */
-    width: 25vw;
-    
-}
 
 .coding img {
     /* border: 1px solid black; */
-    width: 25vw;
+    width: auto;
+    max-height: 40vh;
     
+}
+
+@media (max-width: 1080px) {
+    .coding {
+        display: none;
+    }
+
+    .presentation {
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: 1.5fr 2.5fr;
+        column-gap: 1vmin;
+        position: relative;
+        top: 13vh;
+        padding: 1vmin;
+        align-items: center;
+        height: 40vh;
+        
+        
+    
+    }
 }
 
 
