@@ -9,7 +9,7 @@
 html {
     /* border: 2px solid black; */
     height: auto;
-    background: whitesmoke;
+    background: white;
 
 }
 
@@ -25,7 +25,7 @@ html {
     /* border: 1px solid lightgrey; */
     border-radius: 3px;
     /* background-color: lightgrey; */
-    background-image: linear-gradient(gray,  whitesmoke, rgba(245, 245, 245, 0));
+    background-image: linear-gradient(rgb(207, 184, 50),  rgba(207, 184, 50, 0.74), rgba(207, 184, 50, 0));
     z-index: 10;
 
 }
