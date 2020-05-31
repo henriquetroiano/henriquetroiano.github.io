@@ -67,6 +67,9 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1vmin;
+  grid-template-areas:
+    "profile_img personal_data coding"
+    "about_me about_me about_me";
   position: relative;
   top: 13vh;
   padding: 1vmin;
@@ -118,6 +121,10 @@ html {
   height: auto;
   width: 20vw;
   max-height: 40vh;
+}
+
+.about_me {
+  border: 1px solid black;
 }
 
 @media (orientation: portrait) {
