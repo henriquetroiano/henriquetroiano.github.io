@@ -90,7 +90,7 @@ html {
 }
 
 .personal_data {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: fit-content;
 }
 
@@ -104,14 +104,14 @@ html {
 }
 
 .coding {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0;
   width: fit-content;
   margin-left: 5vmin;
 }
 
 .coding img {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: auto;
   width: 20vw;
   max-height: 40vh;
