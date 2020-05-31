@@ -65,19 +65,25 @@ html {
 .presentation {
   /* border: 1px solid black; */
   display: grid;
-  grid-template-columns: 1.5fr 1.25fr 1.25fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1vmin;
   position: relative;
   top: 13vh;
   padding: 1vmin;
   align-items: center;
+  justify-content: center;
   height: 40vh;
+}
+
+.presentation div {
+  /* border: 1px solid black; */
 }
 
 .profile_img {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row-reverse;
+  margin-left: 2rem;
 }
 
 .profile_img img {
@@ -85,29 +91,26 @@ html {
   width: 30vmin;
   height: auto;
   border-radius: 3vmin;
-  margin-right: 3vmin;
   max-height: 40vh;
 }
 
 .personal_data {
   /* border: 1px solid black; */
-  width: fit-content;
 }
 
 .personal_data h2 {
   font-size: 3vmin;
+  margin-left: 2vmin;
 }
 
 .personal_data p {
   font-size: 3vmin;
   margin-bottom: 1vmin;
+  margin-left: 2vmin;
 }
 
 .coding {
   /* border: 1px solid black; */
-  padding: 0;
-  width: fit-content;
-  margin-left: 5vmin;
 }
 
 .coding img {
