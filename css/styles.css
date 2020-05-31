@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: roboto, sans-serif;
+    font-size: 2vmin;
 }
 
 html {
@@ -17,14 +18,15 @@ html {
 
     /* border: 1px solid black; */
     height: 10vh;
-    position:absolute;
+    position:fixed;
 	top:0;
     left:0;
     right: 0;
     /* border: 1px solid lightgrey; */
     border-radius: 3px;
     /* background-color: lightgrey; */
-    background-image: linear-gradient(gray, whitesmoke);
+    background-image: linear-gradient(gray,  whitesmoke, rgba(245, 245, 245, 0));
+    z-index: 10;
 
 }
 
@@ -34,7 +36,7 @@ html {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    position: relative;
+    position: fixed;
     right: 0;
     left: 0;
 
@@ -57,16 +59,57 @@ html {
 }
 
 .exit {
-    position: absolute;
+    position: fixed;
     right: 0;
     margin-right: 2rem;
 }
 
-.profile_img {
-    width: 30vw;
-    height: auto;
+.presentation {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    column-gap: 1vmin;
     position: relative;
-    top: 15vh;
-    left: 2rem;
+    top: 10vh;
+    padding: 1vmin;
+    align-items: center;
+    
 
 }
+
+.profile_img {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.profile_img img {
+    /* border: 1px solid rgba(255, 0, 0, 0.548); */
+    width: 30vmin;
+    height: auto;
+    border-radius: 3vmin;
+    margin-right: 3vmin;
+
+}
+
+.personal_data {
+    /* border: 1px solid black; */
+
+}
+
+.personal_data h2 {
+    font-size: 3vmin;
+}
+
+.personal_data p {
+    font-size: 3vmin;
+    margin-bottom: 1vmin;
+}
+
+
+
+
+
+
+
