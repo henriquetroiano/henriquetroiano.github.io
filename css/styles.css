@@ -71,7 +71,8 @@ html {
   column-gap: 1vmin;
   grid-template-areas:
     "profile_img personal_data coding"
-    "about_me about_me about_me";
+    "about_me about_me about_me"
+    "habilities habilities habilities";
   position: relative;
   top: 15vh;
   padding: 1vmin;
@@ -148,6 +149,36 @@ html {
 }
 
 .about_me p {
+  font-size: 3vmin;
+}
+
+.habilities {
+  /* border: 1px solid red; */
+  height: 10rem;
+  grid-area: habilities;
+  margin-top: 4vmin;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.habilities h1 {
+  font-size: 4vmin;
+  font-weight: 450;
+  padding-left: 3vw;
+  border-radius: 1vmin;
+  background: rgb(207, 184, 50);
+  width: 20vw;
+  min-width: 15rem;
+  margin-bottom: 3vmin;
+}
+
+.li div {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.li li {
   font-size: 3vmin;
 }
 
