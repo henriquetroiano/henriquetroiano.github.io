@@ -73,7 +73,7 @@ html {
     "profile_img personal_data coding"
     "about_me about_me about_me";
   position: relative;
-  top: 13vh;
+  top: 15vh;
   padding: 1vmin;
   align-items: center;
   justify-content: center;
@@ -131,8 +131,24 @@ html {
 .about_me {
   /* border: 1px solid black; */
   grid-area: about_me;
+  margin-top: 4vmin;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.about_me h1 {
+  font-size: 4vmin;
+  font-weight: 450;
+  padding-left: 3vw;
+  border-radius: 1vmin;
+  background: rgb(207, 184, 50);
+  width: 20vw;
+  min-width: 15rem;
+  margin-bottom: 3vmin;
+}
+
+.about_me p {
+  font-size: 3vmin;
 }
 
 @media (orientation: portrait) {
@@ -146,9 +162,13 @@ html {
     grid-template-columns: 1.5fr 2.5fr;
     column-gap: 1vmin;
     position: relative;
-    top: 13vh;
+    top: 12vh;
     padding: 1vmin;
     align-items: center;
     height: 40vh;
+  }
+
+  .about_me {
+    margin-top: 2vmin;
   }
 }
