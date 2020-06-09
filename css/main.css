@@ -6,11 +6,14 @@
   font-size: 2vmin;
 }
 
-html {
+body {
   /* border: 2px solid black; */
   height: auto;
   background: white;
 }
+
+
+
 
 .top_menu {
   /* border: 1px solid black; */
@@ -209,11 +212,23 @@ html {
   text-decoration-color: blue;
 }
 
+@media (min-width: 801px) {
+  .top_menu_mobile {
+    display: none;
+  }
+}
+
+
+
 @media (orientation: portrait) {
   .coding {
     display: none;
   }
 
+ 
+
+  
+  
   .presentation {
     /* border: 1px solid black; */
     display: grid;
@@ -235,4 +250,34 @@ html {
   }
 
 
+
+
+}
+
+@media (max-width: 800px) {
+  .top_menu {
+    display: none;
+  }
+
+  .top_menu_mobile {
+    border: 1px solid black;
+    /* position: fixed; */
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* border: 1px solid lightgrey; */
+    border-radius: 3px;
+    /* background-color: lightgrey; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top_menu_mobile img {
+    margin: auto 2vmin;
+    height: 5vh;
+  }
+  
 }
