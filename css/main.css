@@ -155,7 +155,7 @@ html {
   /* border: 1px solid red; */
   height: 10rem;
   grid-area: habilities;
-  margin-top: 4vmin;
+  margin-top: 0vmin;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -185,7 +185,7 @@ html {
   /* border: 1px solid black; */
   grid-area: contact;
   height: 10rem;
-  margin-top: 4vmin;
+  margin-top: 0vmin;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -228,6 +228,10 @@ html {
 
   .about_me {
     margin-top: 2vmin;
+  }
+
+  .li li {
+    list-style-type: inherit;
   }
 
 
