@@ -220,13 +220,88 @@ body {
 
 
 
-@media (orientation: portrait) {
-  .coding {
+
+@media (max-width: 800px) {
+  .top_menu {
     display: none;
   }
 
- 
+  body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    z-index: 2;
+  }
 
+  .top_menu_mobile {
+    border: 1px solid rgb(107, 102, 102);
+    /* position: fixed; */
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* border: 1px solid lightgrey; */
+    border-radius: 0 0 3px 3px;
+    /* background-color: lightgrey; */
+    background-color: rgb(136, 127, 127);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .top_menu_mobile img {
+    margin: auto 4vmin;
+    height: 4vh;
+    cursor: pointer;
+  }
+
+  .top_menu_mobile p {
+    border: 1px solid whitesmoke;
+    padding: 1vmin;
+    border-radius: 8px;
+    font-size: 3vmin;
+    color: whitesmoke;
+    max-height: 32px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .top_menu_mobile .content {
+    transition: 1s;
+    padding-top: 2rem;
+    position: fixed;
+    top: 10vh;
+    height: auto;
+  }
+
+  .top_menu_mobile .content li {
+    
+    display: flex;
+    width: 600px;
+    position: relative;
+    top: 0;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+
+  .top_menu_mobile .content li a {
+    text-decoration: none;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    width: 92vw;
+
+  }
+
+  
+  .coding {
+    display: none;
+  }
   
   
   .presentation {
@@ -248,50 +323,6 @@ body {
   .li li {
     list-style-type: inherit;
   }
-
-
-
-
-}
-
-@media (max-width: 800px) {
-  .top_menu {
-    display: none;
-  }
-
-  .top_menu_mobile {
-    border: 1px solid black;
-    /* position: fixed; */
-    height: 10vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    /* border: 1px solid lightgrey; */
-    border-radius: 3px;
-    /* background-color: lightgrey; */
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .top_menu_mobile img {
-    margin: auto 4vmin;
-    height: 4vh;
-  }
-
-  .top_menu_mobile p {
-    border: 1px solid whitesmoke;
-    padding: 1vmin;
-    border-radius: 8px;
-    font-size: 3vmin;
-    
-
-    color: whitesmoke;
-  }
-
-
 
   
 }
