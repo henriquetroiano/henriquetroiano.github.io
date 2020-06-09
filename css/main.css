@@ -144,10 +144,11 @@ body {
   font-weight: 450;
   padding-left: 3vw;
   border-radius: 1vmin;
-  background: rgb(207, 184, 50);
+  background: rgb(136, 127, 127);
   width: 20vw;
   min-width: 15rem;
   margin-bottom: 3vmin;
+  color: white;
 }
 
 .about_me p {
@@ -168,10 +169,11 @@ body {
   font-weight: 450;
   padding-left: 3vw;
   border-radius: 1vmin;
-  background: rgb(207, 184, 50);
+  background: rgb(136, 127, 127);
   width: 20vw;
   min-width: 15rem;
   margin-bottom: 3vmin;
+  color: white;
 }
 
 .li div {
@@ -199,10 +201,11 @@ body {
   font-weight: 450;
   padding-left: 3vw;
   border-radius: 1vmin;
-  background: rgb(207, 184, 50);
+  background: rgb(136, 127, 127);
   width: 20vw;
   min-width: 15rem;
   margin-bottom: 3vmin;
+  color: white;
 }
 
 .contact p, a {
@@ -226,17 +229,17 @@ body {
     display: none;
   }
 
-  body {
+  /* body {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: auto;
     z-index: 2;
-  }
+  } */
 
   .top_menu_mobile {
-    border: 1px solid rgb(107, 102, 102);
+    /* border: 1px solid rgb(107, 102, 102); */
     /* position: fixed; */
     height: 10vh;
     position: fixed;
@@ -251,12 +254,15 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+
+    
   }
 
   .top_menu_mobile img {
     margin: auto 4vmin;
     height: 4vh;
     cursor: pointer;
+
   }
 
   .top_menu_mobile p {
@@ -266,19 +272,29 @@ body {
     font-size: 3vmin;
     color: whitesmoke;
     max-height: 32px;
+
+  }
+
+  .top_menu_mobile nav {
+    transition: 1s;
+
   }
 
   .hidden {
     display: none;
+
+
   }
 
   .top_menu_mobile .content {
-    transition: 1s;
     padding-top: 2rem;
     position: fixed;
     top: 10vh;
     height: auto;
+
   }
+
+  
 
   .top_menu_mobile .content li {
     
@@ -288,6 +304,7 @@ body {
     top: 0;
     margin-bottom: 2rem;
     margin-left: 2rem;
+
   }
 
   .top_menu_mobile .content li a {
