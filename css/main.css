@@ -66,13 +66,14 @@ html {
   /* border: 1px solid black; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: minmax(40vh; auto);
+  grid-auto-rows: minmax(auto, auto);
   row-gap: 2vmax;
   column-gap: 1vmin;
   grid-template-areas:
     "profile_img personal_data coding"
     "about_me about_me about_me"
-    "habilities habilities habilities";
+    "habilities habilities habilities"
+    "contact contact contact";
   position: relative;
   top: 15vh;
   padding: 1vmin;
@@ -81,9 +82,7 @@ html {
   height: 40vh;
 }
 
-.presentation div {
-  /* border: 1px solid black; */
-}
+
 
 .profile_img {
   /* border: 1px solid black; */
@@ -182,6 +181,34 @@ html {
   font-size: 3vmin;
 }
 
+.contact {
+  /* border: 1px solid black; */
+  grid-area: contact;
+  height: 10rem;
+  margin-top: 4vmin;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.contact h2 {
+  /* border: 1px solid black; */
+  font-size: 4vmin;
+  font-weight: 450;
+  padding-left: 3vw;
+  border-radius: 1vmin;
+  background: rgb(207, 184, 50);
+  width: 20vw;
+  min-width: 15rem;
+  margin-bottom: 3vmin;
+}
+
+.contact p, a {
+  font-size: 3vmin;
+  margin-bottom: 1vmin;
+  color: black;
+  text-decoration-color: blue;
+}
+
 @media (orientation: portrait) {
   .coding {
     display: none;
@@ -202,4 +229,6 @@ html {
   .about_me {
     margin-top: 2vmin;
   }
+
+
 }
