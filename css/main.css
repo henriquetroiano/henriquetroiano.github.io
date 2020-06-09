@@ -273,11 +273,25 @@ body {
     background-color: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .top_menu_mobile img {
-    margin: auto 2vmin;
-    height: 5vh;
+    margin: auto 4vmin;
+    height: 4vh;
   }
+
+  .top_menu_mobile p {
+    border: 1px solid whitesmoke;
+    padding: 1vmin;
+    border-radius: 8px;
+    font-size: 3vmin;
+    
+
+    color: whitesmoke;
+  }
+
+
+
   
 }
