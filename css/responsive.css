@@ -26,8 +26,12 @@
     z-index: 10;
   }
   .top_menu_mobile img {
+    /* border: 1px solid whitesmoke; */
+    padding: 3vw;
+
     margin: auto 4vmin;
-    height: 4vh;
+    width: 3vh;
+    max-width: 70px;
     cursor: pointer;
   }
   .top_menu_mobile p {
