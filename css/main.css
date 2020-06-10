@@ -25,9 +25,11 @@ body {
   border-radius: 3px;
   /* background-color: lightgrey; */
   background-image: linear-gradient(
-    rgb(207, 184, 50),
-    rgba(207, 184, 50, 0.74),
-    rgba(207, 184, 50, 0)
+    rgb(38, 81, 221),
+    rgba(38, 81, 221, 1),
+    rgba(38, 81, 221, 0.9),
+     rgba(38, 81, 221, 0.8),
+     rgba(38, 81, 221, 0)
   );
   z-index: 10;
 }
@@ -52,10 +54,21 @@ body {
 .menu_content a {
   /* border: 1px solid blue; */
   text-decoration: none;
-  color: black;
+  color: white;
   /* white-space: nowrap;
     text-overflow: "..."; */
   font-size: 3vmin;
+  transition: 0.3s;
+}
+
+.menu_content a:hover {
+ 
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-radius: 1vmin;
+  background-color: black;
+  padding: 1vmin;
+  color: red;
 }
 
 .exit {
@@ -137,11 +150,11 @@ body {
 }
 
 .about_me h1 {
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   font-weight: 450;
   padding-left: 3vw;
   border-radius: 1vmin;
-  background: rgb(136, 127, 127);
+  background: rgb(38, 81, 221);
   width: 20vw;
   min-width: 15rem;
   margin-bottom: 3vmin;
@@ -162,11 +175,11 @@ body {
 }
 
 .habilities h1 {
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   font-weight: 450;
   padding-left: 3vw;
   border-radius: 1vmin;
-  background: rgb(136, 127, 127);
+  background: rgb(38, 81, 221);
   width: 20vw;
   min-width: 15rem;
   margin-bottom: 3vmin;
@@ -197,11 +210,11 @@ body {
 
 .contact h2 {
   /* border: 1px solid black; */
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   font-weight: 450;
   padding-left: 3vw;
   border-radius: 1vmin;
-  background: rgb(136, 127, 127);
+  background: rgb(38, 81, 221);
   width: 20vw;
   min-width: 15rem;
   margin-bottom: 3vmin;
