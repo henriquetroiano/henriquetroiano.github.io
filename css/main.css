@@ -12,9 +12,6 @@ body {
   background: white;
 }
 
-
-
-
 .top_menu {
   /* border: 1px solid black; */
   height: 10vh;
@@ -84,8 +81,6 @@ body {
   justify-content: center;
   height: 40vh;
 }
-
-
 
 .profile_img {
   /* border: 1px solid black; */
@@ -208,7 +203,8 @@ body {
   color: white;
 }
 
-.contact p, a {
+.contact p,
+a {
   font-size: 3vmin;
   margin-bottom: 1vmin;
   color: black;
@@ -221,23 +217,10 @@ body {
   }
 }
 
-
-
-
 @media (max-width: 800px) {
   .top_menu {
     display: none;
   }
-
-  /* body {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: auto;
-    z-index: 2;
-  } */
-
   .top_menu_mobile {
     /* border: 1px solid rgb(107, 102, 102); */
     /* position: fixed; */
@@ -254,17 +237,12 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-
-    
   }
-
   .top_menu_mobile img {
     margin: auto 4vmin;
     height: 4vh;
     cursor: pointer;
-
   }
-
   .top_menu_mobile p {
     border: 1px solid whitesmoke;
     padding: 1vmin;
@@ -272,55 +250,45 @@ body {
     font-size: 3vmin;
     color: whitesmoke;
     max-height: 32px;
-
   }
-
   .top_menu_mobile nav {
     transition: 1s;
-
   }
-
-  .hidden {
-    display: none;
-
-
+  .top_menu_mobile.content.hidden {
+    padding-top: 2rem;
+    position: fixed;
+    top: -70vh;
+    height: auto;
+    opacity: 0;
+    z-index: 20;
+    transition: 0.4s;
   }
-
-  .top_menu_mobile .content {
+  .top_menu_mobile.content {
     padding-top: 2rem;
     position: fixed;
     top: 10vh;
     height: auto;
-
+    opacity: 1;
+    z-index: 50;
+    transition: 0.3s;
   }
-
-  
-
   .top_menu_mobile .content li {
-    
     display: flex;
     width: 600px;
     position: relative;
     top: 0;
     margin-bottom: 2rem;
     margin-left: 2rem;
-
   }
-
   .top_menu_mobile .content li a {
     text-decoration: none;
     color: whitesmoke;
     border-bottom: 1px solid whitesmoke;
     width: 92vw;
-
   }
-
-  
   .coding {
     display: none;
   }
-  
-  
   .presentation {
     /* border: 1px solid black; */
     display: grid;
@@ -332,7 +300,6 @@ body {
     align-items: center;
     height: 40vh;
   }
-
   .about_me {
     margin-top: 2vmin;
   }
@@ -340,6 +307,4 @@ body {
   .li li {
     list-style-type: inherit;
   }
-
-  
 }
