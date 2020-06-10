@@ -149,6 +149,7 @@ body {
   margin-top: 4vmin;
   margin-left: 2rem;
   margin-right: 2rem;
+  height: auto;
 }
 
 .about_me h1 {
@@ -169,7 +170,7 @@ body {
 
 .habilities {
   /* border: 1px solid red; */
-  height: 10rem;
+  height: auto;
   grid-area: habilities;
   margin-top: 0vmin;
   margin-left: 2rem;
@@ -190,25 +191,41 @@ body {
 
 .li {
   /* border: 1px solid red; */
-  display: grid;
-  margin-right: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: flex; */
+
 }
 
 .li li {
+  
   /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  
   font-size: 3vmin;
-  list-style-position: inherit;
+  list-style-image: url('/assets/list.svg');
+  width: 25%;
+
+
+      
 }
+
+.li li span {
+  display: block;
+
+}
+
+
 
 .contact {
   /* border: 1px solid black; */
   grid-area: contact;
   height: 10rem;
-  margin-top: 0vmin;
+  margin-top: 2vmin;
   margin-left: 2rem;
   margin-right: 2rem;
 }
+
+
 
 .contact h2 {
   /* border: 1px solid black; */
