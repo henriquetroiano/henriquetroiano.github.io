@@ -174,7 +174,7 @@ body {
 }
 
 .li {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   margin-right: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
