@@ -199,7 +199,7 @@ body {
   font-size: 3vmin;
   list-style-image: url("/assets/list.svg");
   width: auto;
-  height: 8vh;
+  height: 8vmin;
   min-width: 32%;
   max-width: 43vmin;
 }
@@ -209,16 +209,17 @@ body {
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  top: 2.5vh;
+  top: 2.5vmin;
 
-  font-size: 3vh;
+  font-size: 3vmin;
 }
 
 .li li span p {
+  /* border: 1px solid black; */
   content: url("/assets/list.svg");
   position: relative;
-  height: 5vh;
-  top: -1vh;
+  height: 5vmin;
+  top: -1vmin;
   margin-right: -4px;
 }
 
