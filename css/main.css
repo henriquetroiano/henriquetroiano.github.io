@@ -199,21 +199,33 @@ body {
   font-size: 3vmin;
   list-style-image: url("/assets/list.svg");
   width: auto;
-  min-width: 20vmin;
-  max-width: 40vmin;
+  height: 8vh;
+  min-width: 32%;
+  max-width: 43vmin;
 }
 
 .li li span {
   /* border: 1px solid black; */
   display: flex;
   flex-wrap: nowrap;
-  font-size: 2vh;
+  position: relative;
+  top: 2.5vh;
+
+  font-size: 3vh;
 }
 
-.li li span::before {
+.li li span p {
   content: url("/assets/list.svg");
   position: relative;
+  height: 5vh;
+  top: -1vh;
+  margin-right: -4px;
 }
+
+/* .li li span::before {
+  content: url("/assets/list.svg");
+  position: relative;
+} */
 
 .contact {
   /* border: 1px solid black; */
