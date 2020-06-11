@@ -28,8 +28,8 @@ body {
     rgb(38, 81, 221),
     rgba(38, 81, 221, 1),
     rgba(38, 81, 221, 0.9),
-     rgba(38, 81, 221, 0.8),
-     rgba(38, 81, 221, 0)
+    rgba(38, 81, 221, 0.8),
+    rgba(38, 81, 221, 0)
   );
   z-index: 10;
 }
@@ -62,7 +62,6 @@ body {
 }
 
 .menu_content a:hover {
- 
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   border-radius: 1vmin;
@@ -95,7 +94,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 40vh;
-  
 }
 
 .profile_img {
@@ -191,30 +189,31 @@ body {
 
 .li {
   /* border: 1px solid red; */
-  /* display: flex; */
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .li li {
-  
   /* border: 1px solid red; */
-  display: flex;
-  align-items: center;
-  
+  display: block;
   font-size: 3vmin;
-  list-style-image: url('/assets/list.svg');
-  width: 25%;
-
-
-      
+  list-style-image: url("/assets/list.svg");
+  width: auto;
+  min-width: 20vmin;
+  max-width: 40vmin;
 }
 
 .li li span {
-  display: block;
-
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 2vh;
 }
 
-
+.li li span::before {
+  content: url("/assets/list.svg");
+  position: relative;
+}
 
 .contact {
   /* border: 1px solid black; */
@@ -224,8 +223,6 @@ body {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
-
 
 .contact h2 {
   /* border: 1px solid black; */
