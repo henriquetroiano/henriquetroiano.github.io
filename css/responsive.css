@@ -76,6 +76,22 @@
     border-bottom: 1px solid whitesmoke;
     width: 92vw;
   }
+
+  #logout_button {
+    pointer-events: none;
+  }
+
+  #hidden_a {
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 220;
+    /* background-color: blueviolet; */
+    height: 10vh;
+    width: 20vw;
+  }
+
   .coding {
     display: none;
   }
@@ -166,6 +182,21 @@
     color: whitesmoke;
     border-bottom: 1px solid whitesmoke;
     width: 92vw;
+  }
+
+  #logout_button {
+    pointer-events: none;
+  }
+
+  #hidden_a {
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 220;
+    /* background-color: blueviolet; */
+    height: 10vh;
+    width: 15vw;
   }
   .coding {
     display: none;

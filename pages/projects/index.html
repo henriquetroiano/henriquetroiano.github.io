@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Henrique</title>
-    <div class="div-container"></div>
-    <div class='top_menu'>
-        <nav>
-            <ul class="menu_content">
-                <li><a href="/">Página Inicial</a></li>
-                <li><a href="/pages/projects">Projetos</a></li>
-                <li><a href="#about_me">Sobre mim</a></li>            
-                <li class="exit"><a title="Clique aqui para voltar ao meu GitHub" href="http://github.com/">Voltar ao meu GitHub</a></li>
-            </ul>
-        </nav>
-    </div>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projetos</title>
+        <div class="div-container"></div>
+        <div class='top_menu'>
+            <nav>
+                <ul class="menu_content">
+                    <li>
+                        <a href="/">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="/pages/projects">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#about_me">Contato</a>
+                    </li>
+                    <li>
+                        <a title="Clique aqui para voltar ao GitHub" href="http://github.com/henriquetroiano">Voltar ao GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="top_menu_mobile">
+            <img src="/assets/menu.svg" alt="menu" id="menu_button">
+            <p>Você está em:
+                <script>
+                    document.write(document.getElementsByTagName('title')[0].innerText)
+                </script>
+            </p>
+            <img src="/assets/logout.svg" alt="logout" id="logout_button">
+            <div class="top_menu_mobile content hidden" id="menu_mobile">
+                <nav>
+                    <li>
+                        <a href="/">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="/pages">Demonstrações</a>
+                    </li>
+                    <li>
+                        <a href="/pages/projects">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#about_me">Contato</a>
+                    </li>
+                    <li>
+                        <a title="Clique aqui para voltar ao GitHub" href="http://github.com/henriquetroiano">Voltar ao GitHub</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </head>
 
-<body>
-    <h1>Meus Projetos</h1><br><br>
-    <h2>ERP - Programa de gerenciamento comercial</h2>
-    <p>Sistema para caixa de Mercado</p>
-    <img src="/imgs/erp.jpg" alt="Sistema ERP para caixa de mercado">
+    <body>
+        <h1>Meus Projetos</h1><br><br>
+        <h2>ERP - Programa de gerenciamento comercial</h2>
+        <p>Sistema para caixa de Mercado</p>
+        <img src="/imgs/erp.jpg" alt="Sistema ERP para caixa de mercado">
 
-    
+        <script type='text/javascript' src="/js/script.js"></script>
 
-
-
-
-    <script type='text/javascript' src="../../script.js"></script>
-
-</body>
+    </body>
 
 </html>

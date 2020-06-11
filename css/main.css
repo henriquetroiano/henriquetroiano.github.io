@@ -70,12 +70,6 @@ body {
   color: red;
 }
 
-.exit {
-  position: fixed;
-  right: 0;
-  margin-right: 2rem;
-}
-
 .presentation {
   /* border: 1px solid black; */
   display: grid;
