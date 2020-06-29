@@ -1,136 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Portifolio</title>
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página Inicial</title>
-        <div class='top_menu'>
-            <nav>
-                <ul class="menu_content">
-                    <li>
-                        <a href="/">Página Inicial</a>
-                    </li>
-                    <li>
-                        <a href="/pages/projects">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="#about_me">Contato</a>
-                    </li>
-                    <li class="exit">
-                        <a title="Clique aqui para voltar ao GitHub" href="http://github.com/henriquetroiano">Voltar ao GitHub</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="top_menu_mobile">
-            <img src="/assets/menu.svg" alt="menu" id="menu_button">
-            <p>Você está em:
-                <script>
-                    document.write(document.getElementsByTagName('title')[0].innerText)
-                </script>
-            </p>
-            <img src="/assets/logout.svg" alt="logout" id="logout_button">
-            <a id="hidden_a" for="logout_button" href="http://github.com/henriquetroiano"></a>
-            <div class="top_menu_mobile content hidden" id="menu_mobile">
-                <nav>
-                    <li>
-                        <a href="/">Página Inicial</a>
-                    </li>
-                    <li>
-                        <a href="/pages">Demonstrações</a>
-                    </li>
-                    <li>
-                        <a href="/pages/projects">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="#about_me">Contato</a>
-                    </li>
-                    <li>
-                        <a title="Clique aqui para voltar ao GitHub" href="http://github.com/henriquetroiano">Voltar ao GitHub</a>
-                    </li>
-                </nav>
-            </div>
+    <div class="topMenu">
+        <span id="menuButton" class=""></span>
+        <div class="menu">
+            <a class="active" href=""><span>HOME</span></a>
+            <a href=""><span>SKILLS</span></a>
+            <a href=""><span>PROJETOS</span></a>
+            <a href=""><span>CURSOS</span></a>
+            <a href=""><span>CONTATO</span></a>
         </div>
 
-    </head>
-    <div>
-
-        <body>
-            <div class="presentation">
-                <div class="profile_img">
-                    <img src="/imgs/me.png" alt="Foto de Perfil">
-                </div>
-                <div class="personal_data">
-                    <h2>Nome</h2>
-                    <p>Henrique Troiano</p>
-                    <h2>Idade</h2>
-                    <p>23 Anos</p>
-                    <h2>Estado Civil</h2>
-                    <p>Solteiro</p>
-                    <h2>Localidade</h2>
-                    <p>Arujá - SP</p>
-                    <h2>Objetivo Profissional</h2>
-                    <p>Desenvolvedor Front-end Júnior</p>
-                </div>
-                <div class="coding">
-                    <img src="/imgs/coding.png" alt="coding png">
-                </div>
-                <div class="about_me">
-                    <h1>Sobre mim</h1>
-                    <p>Me chamo Henrique, sou Desenvolvedor Front-end Júnior. Trabalho atualmente com as tecnologias JavaScript, CSS e HTML.</p>
-                </div>
-                <div class="habilities">
-                    <h1>Habilidades</h1>
-                    <div class="li">
-
-                        <li>
-                            <span>
-                                <p></p>CSS</span></li>
-
-                        <li>
-                            <span>
-                                <p></p>HTML</span></li>
-
-                        <li>
-                            <span>
-                                <p></p>JavaScript</span></li>
-
-                        <li>
-                            <span>
-                                <p></p>Git</span></li>
-
-                        <li>
-                            <span>
-                                <p></p>GitHub</span></li>
-
-                        <li>
-                            <span>
-                                <p></p>Bootstrap</span></li>
-
-                        <li>
-                            <span>
-                                <p></p>Layout Responsivo</span></li>
-
-                    </div>
-                </div>
-                <div class="contact">
-                    <h2>Contato</h2>
-                    <p>Whatsapp/Tel:
-                        <a href="tel:+5511948589622">(+55) 11 94858-9622</a>
-                    </p>
-                    <br>
-                    <p>E-mail:
-                        <a href="mailto:henriquetroiano@hotmail.com" title="Clique para enviar um E-mail">henriquetroiano@hotmail.com</a>
-                    </p>
-                </div>
-            </div>
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-            <script type='text/javascript' src="/js/script.js"></script>
-        </body>
+        <div class="socialNetworks">
+            
+            <a href="https://github.com/henriquetroiano/" target="_blank"><img src="assets/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/henriquetroiano/" target="_blank"><img src="assets/linkedin.svg" alt="linkedin"></a>
+            <a href="https://twitter.com/henriquetroiano" target="_blank"><img src="assets/twitter.svg" alt="twitter"></a>
+            <a href="https://api.whatsapp.com/send?phone=+5511948589622&text=Olá!%20Boa%20tarde!%20Gostaria%20de%20entrar%20em%20contato%20contigo,%20encontrei%20seu%20contato%20pelo%20portifólio!" target="_blank"><img src="assets/whatsapp.svg" alt="whatsapp"></a>
+            
+        </div>
+        
     </div>
 
+
+
+    <div class="display">
+
+            <div class="personalData">
+                <div id="data">
+                    <section>
+                        <div class="profile">
+                            <img src="imgs/me.png" alt="profileImg">
+                        </div>
+                        <div class="cards">
+                            <img src="assets/js.svg" alt="JS">
+                            <img src="assets/nodejs.svg" alt="NodeJS">
+                            <img src="assets/css3.svg" alt="CSS"> 
+                        </div>
+
+                    </section>
+                    <h2>Henrique Troiano</h2>
+                    <h3>Desenvolvedor Front-End</h3>
+                    <h2>Idade</h2>
+                    <h3>22 anos</h3>
+                    <h2>Tecnologias</h2>
+                    <h3>JavaScript, Ajax, JQuery, CSS, HTML, NodeJS</h3>
+                    <div id="span" class=""><span></span></div>
+                    <section class="extrainfo">
+                        <h2>Objetivo profissional:</h2>
+                        <h3>-Desenvolvedor Front-End</h3>
+                        <h2>Formação Acadêmica:</h2>
+                        <h3>-Ensino Técnico em Administração</h3>
+                        <h2>Idiomas: </h2>
+                        <h3>-Português (Nativo)</h3>
+                        <h3>-Inglês (intermediário)</h3>
+                        <h2>Cursos Extra-curriculares: </h2>
+                        <h3>-Javascript Completo ES6+ - Origamid</h3>
+                        <h3>-HTML - Formação Básica - Linkedin Learning</h3>
+
+                    </section>
+                </div>
+                
+            </div>
+            <div id="arrow" class=""><span></span></div>
+
+            <div class="about">
+                <div class="me">
+                    <h2>Sejam bem-vindos ao meu perfil!</h2>
+                    <br>
+                    <p>Me chamo Henrique e trabalho com as tecnologias JavaScript, HTML, CSS, NodeJS, Jquery e Ajax.</p>
+                    <br>
+                    <p>Você pode utilizar o menu para navegar pelo site, visualizar as habilidades e projetos e cursos.</p>
+                    <br>
+                    <p>Atualmente formado Técnico em Administração pela Etec Santa Iasbel, sempre procuro sair da minha zona de conforto absorvendo o máximo de conhecimento na área que realmente almejo trabalhar: A área de Tecnologia da Informação.</p>
+                    <br>
+                    <p>Pretendo iniciar ainda este ano a graduação em Engenharia de Computação.</p>
+                    <br>
+                    <p>Para o futuro pretendo me especializar na área de Segurança da Informação</p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="skills none nonedesktop">
+                <div>
+                    <section id="img">
+                        <img src="assets/css3.svg" alt="CSS">
+                    </section>
+                    <section id="hability">
+                        <h3>CSS</h3>
+                        <h4>Grid Layout, Flexbox, Animations, Transitions, Bootstrap</h4>
+                    </section>
+                    <section id="percentage">
+                        <p style="width: 70%;">70%</p>
+                    </section>
+                </div>
+
+                <div>
+                    <section id="img">
+                        <img src="assets/html5.svg" alt="HTML5">
+                    </section>
+                    <section id="hability">
+                        <h3>HTML</h3>
+                        <h4>Semântica, Modularização, Nunjucks.</h4>
+                    </section>
+                    <section id="percentage">
+                        <p style="width: 80%;">80%</p>
+                    </section>
+                </div>
+                <div>
+                    <section id="img">
+                        <img src="assets/js.svg" alt="JS">
+                    </section>
+                    <section id="hability">
+                        <h3>JavaScript</h3>
+                        <h4>Modularização, Ajax, JQuery, Linter</h4>
+                    </section>
+                    <section id="percentage">
+                        <p style="width: 60%;">60%</p>
+                    </section>
+                </div>
+                <div>
+                    <section id="img">
+                        <img src="assets/nodejs.svg" alt="NodeJS">
+                    </section>
+                    <section id="hability">
+                        <h3>NodeJS</h3>
+                        <h4>Express</h4>
+                    </section>
+                    <section id="percentage">
+                        <p style="width: 30%;">30%</p>
+                    </section>
+                </div>
+                
+            </div>
+            <div class="projects none nonedesktop">
+                <div>
+                    <img id="img" src="imgs/nlw.png" alt="">
+                    <h3>Ecoleta</h3>
+                    <section id="description">
+                        <p>Projeto realizado através de curso oferecido pela Rocket Seat.</p>
+                        <br>
+                        <p>O objetivo deste projeto foi colocar em prática tudo o que aprendemos nos cursos de HTML, CSS, HTML, Nunjucks, criando uma platadorma tanto mobile quanto Desktop para cadastro e consulta de pontos de coleta de materiais recicláveis.</p>
+                        <br>
+                        <a href='https://github.com/henriquetroiano/NextLevelWeek-RocketSeat' target="_blank">Clique aqui para acessar o repositório no GitHub</a>
+                    </section>
+                </div>
+                
+            </div>
+            <div class="courses none nonedesktop">
+                <div>
+                    <img src="imgs/origamid.jpg" alt="origamid" id="img">
+                    <h3>JavaScript Completo ES6+</h3>
+                    <h4>Curso completo de JavaScript, HTML e CSS, com projeto final (em andamento).</h4>
+                    <p>Neste curso será abordada a aplicação dos acima citados no desenvolvimento WEB, com requisições via Fetch API, Manipulação do DOM, Arrow Functions e Promisses.</p>
+                    <a href="#" data-finished="no">Curso em andamento</a>
+                </div>
+                <div>
+                    <img src="imgs/learning.jpg" alt="linkedin" id="img">
+                    <h3>JavaScript - Formação básica</h3>
+                    <h4>Curso de formação em JavaScript</h4>
+                    <p>Curso de JavaScript fornecido pelo LinkedIn Learning. Conceitos de Funções, Classes, Algoritimos, Strings, Arrays, Classes e etc. Compreensão do JavaScript, desde princípios básicos como variáveis, tipos de dados, condicionais e funções até tópicos avançados, incluindo laços de repetição, closures (fechamentos), DOM scripting e bibliotecas de JavaScript.
+                    </p>
+                    <a href='docs/jsfb.pdf' target="_blank" data-finished="yes">Clique aqui para acessar o Certificado</a>
+                </div>
+                <div>
+                    <img src="imgs/learning.jpg" alt="linkedin" id="img">
+                    <h3>HTML - Formação básica</h3>
+                    <h4>Curso de formação em HTML</h4>
+                    <p>Este curso fornece uma visão aprofundada da sintaxe do HTML e as melhores práticas para escrever e editar o seu código. Entendendo a estrutura de um documento HTML típico e a dividisão de páginas, formatar seu conteúdo com HTML. Criar links e listas e como o HTML funciona com CSS e JavaScript para criar experiências de usuário ricas.</p>
+                    <a href='docs/htmlfb.pdf' target="_blank" data-finished="yes">Clique aqui para acessar o Certificado</a>
+                </div>
+                
+                
+            </div>
+            <div class="contact none nonedesktop">
+                <section>
+
+                    <h2>Contato</h2>
+                    <p>Whatsapp/Tel: <a href="tel:+5511948589622">Ligar</a><a href="https://api.whatsapp.com/send?phone=+5511948589622&text=Olá!%20Boa%20tarde!%20Gostaria%20de%20entrar%20em%20contato%20contigo,%20encontrei%20seu%20contato%20pelo%20portifólio!" target="_blank">Whatsapp</a></a></p> 
+                    <p>E-mail: <a id="mail" href="mailto:henriquetroiano@hotmail.com" value="mailto:henriquetroiano@hotmail.com">Enviar e-mail</a><input type="text" class="none nonedesktop" id="copiare" href="mailto:henriquetroiano@hotmail.com" value="henriquetroiano@hotmail.com"><span id="copy"><img src="./assets/copy.svg" alt="copy"></span></p>
+                </section>
+                
+            </div>
+
+            
+    </div>
+
+
+
+<script src="script.js" type="module"></script>
+</body>
 </html>

@@ -1,0 +1,116 @@
+@media (orientation: portrait) and (max-width: 700px) {
+  .topMenu {
+    display: block;
+    height: 10vh;
+    width: 100vw;
+    /* border: 1px solid white; */
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.678));
+    z-index: 3;
+  }
+
+  .display {
+    background-color: rgb(53, 54, 58);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    height: auto;
+    min-height: 93vh;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  .menu {
+    transition: 0.5s;
+    border: 1px solid black;
+    position: absolute;
+    left: 0;
+    top: -50vh;
+    width: 50vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.61));
+    border-radius: 0 0 8px 0;
+    z-index: -19;
+  }
+
+  .menu.pressed {
+    top: 10vh;
+    z-index: 1;
+  }
+
+  .menu a.active {
+    /* border: 1px solid wheat; */
+    text-decoration: none;
+    color: whitesmoke;
+    /* background: yellowgreen; */
+    height: 7vh;
+    width: 30vw;
+    margin-left: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 10px solid red;
+    transition: 0.5s;
+  }
+
+  .socialNetworks {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 10vh;
+    margin-right: 2vw;
+  }
+
+  .socialNetworks img {
+    /* border: 1px solid wheat; */
+    cursor: pointer;
+    height: 5vh;
+    width: 4vh;
+    position: relative;
+    top: 2vh;
+    margin-right: 3vw;
+  }
+
+  .mobileMenu {
+    /* border: 1px solid wheat; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    min-width: 10vw;
+    max-width: 40vw;
+    height: 6vh;
+    padding: 5px;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    margin-left: 3vw;
+    border-radius: 6px;
+    background: rgb(85, 85, 85);
+  }
+
+  .mobileMenu span {
+    content: url("../assets/openmenu.svg");
+    width: 25px;
+    height: auto;
+    user-select: none;
+  }
+
+  .mobileMenu p {
+    font-weight: bold;
+    color: white;
+  }
+
+  .mobileMenu.pressed {
+    background: rgba(255, 0, 0, 0.555);
+  }
+
+  .mobileMenu.pressed span {
+    content: url("../assets/closemenu.svg");
+    transform: rotate(360deg);
+    width: 25px;
+    user-select: none;
+
+  }
+}

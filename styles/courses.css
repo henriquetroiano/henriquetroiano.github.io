@@ -1,0 +1,94 @@
+.courses {
+  /* border: 1px solid red; */
+  width: 70vw;
+  height: 84vh;
+  margin: 0 3vw;
+  padding: 0 1vw;
+  /* background: gray; */
+  border-radius: 8px;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.courses > div {
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.courses img {
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.courses h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background-color: rgb(93, 95, 93);
+  border-radius: 30px 8px 30px 8px;
+  padding: 5px 25px;
+  color: whitesmoke;
+  font-weight: 400;
+  font-style: italic;
+  width: max-content;
+}
+
+.courses h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.courses p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.courses a[data-finished="yes"] {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: rgb(70, 180, 70);
+  padding: 15px 0;
+  margin: 0 5%;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  height: 3rem;
+  width: 90%;
+}
+
+.courses a[data-finished="no"] {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  color: whitesmoke;
+  padding: 15 0px;
+  margin: 0 5%;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  height: 3rem;
+  width: 90%;
+  background-color: gray;
+  pointer-events: none;
+  opacity: 0.7;
+}

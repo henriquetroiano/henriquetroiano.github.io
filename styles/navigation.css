@@ -1,0 +1,76 @@
+/* navigation menu styles */
+
+.topMenu {
+  display: flex;
+  height: 7vh;
+  width: 100vw;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+  background: linear-gradient(
+    to top,
+    black,
+    rgb(59, 58, 58),
+    rgb(32, 32, 32),
+    rgb(17, 17, 17),
+    gray
+  );
+  z-index: 2;
+}
+
+/* define a borda vermelha abaixo do item do menu superior direito de acordo com o local que voce está. */
+.topMenu .active {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid red;
+}
+
+.menu {
+  /* border: 1px solid white; */
+  position: absolute;
+  right: 0;
+  display: flex;
+  margin-right: 2vw;
+}
+
+.menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  /* background: yellowgreen; */
+  height: 7vh;
+  width: auto;
+  margin-left: 1vw;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid red;
+}
+
+.menu a span {
+  /* border: 1px solid wheat; */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 2vh;
+  pointer-events: none;
+}
+
+.socialNetworks {
+  /* border: 1px solid wheat; */
+  display: flex;
+  position: absolute;
+  height: 7vh;
+  margin-left: 2vw;
+}
+
+.socialNetworks img {
+  /* border: 1px solid wheat; */
+  cursor: pointer;
+  height: 3vh;
+  width: 3vh;
+  position: relative;
+  top: 2vh;
+  margin-right: 1vw;
+}

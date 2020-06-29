@@ -1,0 +1,21 @@
+div.about {
+  /* border: 1px solid white; */
+  width: 70vw;
+  height: 84vh;
+  margin: 0 3vw;
+  padding: 10px 1vw;
+  background: whitesmoke;
+  border-radius: 8px;
+  position: relative;
+  right: 0;
+  flex: 1;
+}
+
+div.about > div.me > h2 {
+  background: gray;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 35px 8px;
+  color: white;
+  font-weight: 400;
+}

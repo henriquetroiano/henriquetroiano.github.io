@@ -1,0 +1,73 @@
+.contact {
+  width: 70vw;
+  height: 84vh;
+  margin: 0 3vw;
+  padding: 0 1vw;
+  /* background: gray; */
+  border-radius: 8px;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.contact > section {
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.contact > section > h2 {
+  font-size: 2rem;
+  background-color: grey;
+  color: whitesmoke;
+  font-style: italic;
+  font-weight: 400;
+  border-radius: 35px 10px;
+  width: max-content;
+  padding: 5px 25px;
+  margin-bottom: 10px;
+}
+
+.contact > section > p {
+  /* border: 1px solid black; */
+  font-size: 16px;
+  font-weight: 500;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact > section > p > a {
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 10px;
+  background-color: rgb(70, 180, 70);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+}
+
+.contact > section > p > span {
+  /* border: 1px solid black; */
+  margin-left: -10px;
+  background-color: rgb(70, 180, 70);
+  display: flex;
+  flex-direction: row;
+  height: 39px;
+  border-radius: 0 8px 8px 0;
+}
+
+.contact > section > p > span > img {
+  /* border: 1px solid red; */
+  height: 25px;
+  align-self: center;
+  margin: 0 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,174 @@
+@media (orientation: portrait) and (max-width: 400px) {
+
+    .personalData .info #span {
+       
+        pointer-events: none;
+    }
+
+    .personalData .info #span span {
+       
+        pointer-events: visible;
+    }
+    .personalData #datamobile div.info h2 { 
+        border: 1px solid wheat;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .personalData #datamobile div.info h3 { 
+        /* border: 1px solid wheat; */
+        font-size: 0.6em;
+        font-weight: 400;
+    }
+}
+
+
+@media (orientation: portrait) and (max-width: 700px) {
+
+    .display {
+        background-color: rgba(53, 54, 58, 0.76);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0vh;
+        height: auto;
+        min-height: auto;
+        width: 100vw;
+        z-index: 0;
+
+    }
+
+    .personalData {
+        width: 94vw;
+        height: 40vh;
+        display: block;
+    }
+
+    .personalData #data {
+        display: none;
+
+    }
+
+    .personalData #datamobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .personalData #datamobile div.img {
+        margin-right: 10px;
+
+    }
+
+    .personalData #datamobile div.img {
+        /* border: 1px solid wheat; */
+    }
+
+    .personalData #datamobile div.img img {
+        width: auto;
+        border-radius: 10px;
+    }
+
+
+
+    .personalData #datamobile div.info { 
+        /* border: 1px solid wheat; */
+        height: 35vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3vh 0;
+    }
+
+    .personalData #datamobile div.info h2 { 
+        /* border: 1px solid wheat; */
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .personalData #datamobile div.info h3 { 
+        /* border: 1px solid wheat; */
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .personalData.active {
+        flex-direction: column;
+        width: 94vw;
+        height: 130vw;
+    }
+
+    .personalData .info #span {
+        /* border: 1px solid wheat; */
+        width: 94vw;
+        height: 40vh;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-content: flex-start;
+        z-index: 499;
+    }
+
+    .personalData .info #span.active {
+        /* border: 1px solid wheat; */
+        width: 94vw;
+        height: 130vw;
+        z-index: 500;
+        pointer-events: none;
+    } 
+
+    .personalData .info #span span {
+        /* border: 1px solid wheat; */
+        margin-bottom: -35px;
+        margin-left: -25px;
+        align-self: flex-end;
+        transform: rotate(90deg);
+        z-index: 499;
+    }
+
+    .personalData .info #span.active span {
+        transform: rotate(270deg);
+        z-index: 500;
+        pointer-events: visible;
+    }
+
+    .about {
+        height: auto;
+        width: 94vw;
+    } 
+
+    .personalData #resume.active  {
+        /* border: 1px solid white; */
+        margin: 3vw 0vw 30vw 0vw;
+        
+    }
+
+    .personalData #resume.active h3 {
+        /* border: 1px solid white; */
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+
+    .personalData #resume.active p {
+        /* border: 1px solid white; */
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        line-height: 5vw;
+        font-weight: 400;
+
+    }
+
+    .personalData #resume.active p + h3{
+        margin-top: 4vw;
+      }
+    
+
+}
+
+
+
+

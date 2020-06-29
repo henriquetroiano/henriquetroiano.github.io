@@ -1,0 +1,114 @@
+/* configuração da caixa de informações pessoais */
+.personalData {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 3vw;
+  left: 0;
+  background: whitesmoke;
+  padding: 10px 1vw;
+  border-radius: 8px;
+  width: 20vw;
+  height: 84vh;
+  overflow: hidden;
+}
+
+.personalData > #data > section > .cards {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vh;
+  max-width: 18vw;
+}
+
+.personalData > #data > section > .cards > img {
+  /* border: 1px solid black; */
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+
+.personalData.active {
+  width: 40vw;
+}
+
+.personalData #data img {
+  width: 18vw;
+  margin-bottom: 2vh;
+  border-radius: 8px;
+}
+
+.personalData #data h2 {
+  /* border: 1px solid black; */
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 18vw;
+  margin-top: 20px;
+}
+
+.personalData #data h3 {
+  /* border: 1px solid black; */
+  font-weight: 300;
+  font-size: 1rem;
+  width: 16vw;
+}
+
+.personalData > #data > section.extrainfo {
+  display: none;
+}
+
+.personalData.active > #data > section.extrainfo {
+  /* border: 1px solid black; */
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 5vh;
+  left: 23vw;
+  height: 84vh;
+  width: 20vw;
+  pointer-events: none;
+}
+
+.personalData #span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid white; */
+  position: absolute;
+  height: 60vh;
+  width: 20vw;
+  top: 0;
+  left: 0;
+  margin: 5vh 0 3vh 3vw;
+  height: 84vh;
+}
+
+.personalData #span.active {
+  width: 40vw;
+}
+
+.personalData #span span {
+  /* border: 1px solid red; */
+  display: flex;
+  align-self: flex-end;
+  background: url("../assets/open.svg") no-repeat;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: -30px;
+  transition: 1s;
+  transform: rotate(0deg);
+}
+
+.personalData #span.active span {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-right: -35px;
+  cursor: pointer;
+  z-index: 5000;
+  transition: 1s;
+  transform: rotate(180deg);
+}

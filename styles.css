@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "styles/animations.css";
+@import "styles/contact.css";
+@import "styles/courses.css";
+@import "styles/home.css";
+@import "styles/navigation.css";
+@import "styles/personaldata.css";
+@import "styles/projects.css";
+@import "styles/skills.css";
+
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+  transition: all 0.5s;
+}
+
+body {
+  background-color: rgb(53, 54, 58);
+}
+
+.display {
+  background-color: rgb(53, 54, 58);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 7vh;
+  min-height: 93vh;
+  max-height: max-content;
+  width: 100vw;
+  z-index: 0;
+}
+
+@media (orientation: landscape) {
+  .display .nonedesktop {
+    display: none;
+  }
+}

@@ -1,0 +1,80 @@
+div.skills {
+  /* border: 1px solid white; */
+  width: 70vw;
+  height: 84vh;
+  margin: 0 3vw;
+  padding: 0 1vw;
+  /* background: gray; */
+  border-radius: 8px;
+  position: relative;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+div.skills div {
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 25vh;
+  /* align-self: center; */
+  margin: 0 1rem 8px 0;
+  border-radius: 1rem;
+  background: whitesmoke;
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "hability img"
+    "percentage img";
+  grid-template-columns: 4fr 1fr;
+  gap: 10px;
+}
+
+div.skills div section#img {
+  grid-area: img;
+  /* width: 60%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.skills div section#img img {
+  height: 150px;
+  width: 150px;
+}
+
+div.skills div section#hability {
+  grid-area: hability;
+}
+
+div.skills div section#hability h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background-color: rgb(93, 95, 93);
+  border-radius: 30px 8px 30px 8px;
+  padding: 5px 25px;
+  color: whitesmoke;
+  font-weight: 400;
+  font-style: italic;
+  width: max-content;
+}
+
+div.skills div section#hability h4 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+div.skills div section#percentage {
+  grid-area: percentage;
+  display: flex;
+  align-items: center;
+}
+
+div.skills div section p {
+  text-align: center;
+  background: forestgreen;
+  border-radius: 8px;
+  color: whitesmoke;
+  animation: loading 2s forwards;
+}
