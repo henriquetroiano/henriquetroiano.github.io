@@ -70,3 +70,8 @@
   text-decoration: none;
   border-radius: 8px;
 }
+
+.projects #description a[data-finished="no"] {
+  background-color: gray;
+  pointer-events: none;
+}
